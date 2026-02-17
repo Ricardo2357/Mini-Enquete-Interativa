@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #f4f7f6;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  padding: 28px;
+  background-color: #134b8b;
+  color: #f5f5f5;
+}
+
+main {
+  height: auto;
+}
+
+.layout {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  margin: 40px auto;
+  padding: 30px 10px;
+  border: 2px solid #2b527e;
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 30px;  
+}
+
+.div-input-label {
+  display: flex;
+  gap: 10px;
+}
+
+.form-poll label {
+  font-size: 22px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  margin: 30px 30px 30px 30px;
+}
+
+button {
+  font-size: 20px;
+  padding: 5px 5px;
+  border-radius: 8px;
+  width: 20%;
+  background-color: #28a745;
+  color: white;
+  border: 2px solid #538860;
+  cursor: pointer;
+  transition: transform 0.25s ease-in-out, trasform 0.3s ease-in;
+}
+
+button:hover {
+  background-color: #269b41;
+  transform: scale(1.13);
+}
+
+button:active {
+  transform: translateY(10px)
+}
+
+hr {
+  border: none;
+  border-top: 2px dashed #2b527e;
+  margin: 0;
+}
+
+.div-results span {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 30px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.language-results {
+  font-size: 22px;
+  padding-left: 30px;  
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #134b8b;
+  color: #f5f5f5;
+}
