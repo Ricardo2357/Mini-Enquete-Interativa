@@ -76,19 +76,14 @@ Mini-Enquete-Interativa/
 ├── static/
 │   └── assets/
 │       └── images/
-│           ├── Logo-Minha-Estante-Virtual.png
-│           └── preview-minha-estante-virtual.png
+│           └── preview-mini-enquete-interativa.png
 │   └── css/
 │       └── style.css
-├── pages/
-│   ├── add-book.html
-│   ├── book-details.html
-│   ├── index.html
-│   └── layout.html
+├── templates/
+│   └── poll.html
 ├── LICENSE
 ├── README.md
-├── app.py
-└── books.csv
+└── app.py
 ```
 
 ## Licença 
