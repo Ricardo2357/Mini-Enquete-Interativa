@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mini-Enquete Interativa</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+
+    <body>
+        <header>
+            <div class="title">
+                <span>Mini-Enquete Interativa</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="layout">
+                <div class="div-poll">
+                    <form class="form-poll" action="{{ url_for('poll') }}" method="POST">
+                        <p class="question">{{ poll_data.question }}</p>
+
+                        <div class="options">
+                            {% for item in poll_data['options'] %}
+                                <div class="div-input-label">
+                                    <input type="radio" id="language-{{ item.id }}" name="language" value="{{ item.id }}" required>
+                                    <label for="language-{{ item.id }}">{{ item.text }}</label>
+                                </div>
+                            {% endfor %}
+                        </div>
+
+                        <div class="submit-button">
+                            <button type="submit">Votar</button>
+                        </div>
+                    </form>
+                </div>
+                <hr>
+                <div class="div-results">
+                    <span>Resultados</span>
+
+                    <div class="results">
+                        {% for item in poll_data['options'] %}
+                            {% if item.votes == 1 %}
+                                <p class="language-results">{{ item.text }}: {{ item.votes }} voto</p>
+                            {% else %}
+                                <p class="language-results">{{ item.text }}: {{ item.votes }} votos</p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Mini-Enquete Interativa &ndash; &copy; 2026</p>
+        </footer>
+    </body>
+
+</html>
