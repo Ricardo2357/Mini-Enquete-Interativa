@@ -1,7 +1,7 @@
 # Mini-Enquete-Interativa
 
-
-
+Este projeto é consiste em uma Mini Enquete Interativa, ela permite que os usuários votem em sua linguagem de programação favorita e visualizem os resultados instantaneamente. O projeto destaca a interação entre o back-end e o front-end, criando uma experiência dinâmica.
+ 
 <p align="left">
   <img src="static/assets/images/preview-mini-enquete-interativa.png" alt="Preview do Mini Enquete Interativa" width="600">
 </p>
